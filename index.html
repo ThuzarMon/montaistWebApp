@@ -35,7 +35,7 @@ document.addEventListener('init', function(event) {
   var page = event.target;
 
   function showPosition(position) {
-    page.querySelector('#latlng').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: ".
+    page.querySelector('#latlng').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: ";
   }
   
   if (page.id === 'page1') {
@@ -44,7 +44,7 @@ document.addEventListener('init', function(event) {
     };
   } else if (page.id === 'page2') {
     page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
-  navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(showPosition);
   }
 });  
 </script>
