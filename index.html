@@ -35,7 +35,7 @@
   var page = event.target;
 
   function showPosition(position) {
-    page.querySelector('#latlng').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: ";
+    page.querySelector('#latlng').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
   }
   
   if (page.id === 'page1') {
